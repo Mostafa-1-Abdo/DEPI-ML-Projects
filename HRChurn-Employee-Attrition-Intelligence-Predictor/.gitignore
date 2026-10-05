@@ -218,3 +218,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project Specific - Data & Models
+data/processed/*
+!data/processed/.gitkeep
+
+# Ignore large exported model binaries during experimentation
+models/*.pkl
+models/*.joblib
+models/*.h5
+!models/.gitkeep
